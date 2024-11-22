@@ -1,7 +1,14 @@
+import { useFarcasterIdentity } from "@frames.js/render/identity/farcaster"
 import { useState } from "react"
+
+// do Inspect Popup in chrome and see the error there
+// if you comment this, then the extension will work
+console.log(useFarcasterIdentity)
 
 function IndexPopup() {
   const [data, setData] = useState("")
+
+  console.log("test")
 
   return (
     <div
